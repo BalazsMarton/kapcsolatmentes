@@ -1,11 +1,22 @@
 Rails.application.routes.draw do
-  mount Ckeditor::Engine => '/ckeditor'
+  
   resources :posts
+  
+  mount Ckeditor::Engine => '/ckeditor'
+
   root 'pages#index'
   get '/index' => 'pages#index'
   get '/blog' => 'pages#blog'
+  get '/show/:id' => 'pages#show', as: 'show_post'
+  get '/about' => 'pages#about'
+  get '/why' => 'pages#why'
+  get '/contact' => 'pages#contact'
+  get '/meeting' => 'pages#meeting'
+  get '/partners' => 'pages#partners'
+
 
   get '/admin' => 'posts#index'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

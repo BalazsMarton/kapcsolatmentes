@@ -1,0 +1,22 @@
+<% @posts.each do |post| %>
+
+	<div class="row" id="post-list-box">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="" id="post-header" style="background-image: url('<%= post.image.cover.url %>');  ">
+				<div id="post-header-title">
+					<h1 >
+						<%= link_to post.title, show_post_path(post) %>
+					</h1>
+					<p><%= post.created_at.to_date %></p>
+				</div>
+			</div>
+
+			<div id="post-content-strip">
+			<%= strip_tags post.content.html_safe.truncate(500) %>
+			<%= link_to 'Tovább...', show_post_path(post) %>
+			</div>
+			<hr>
+		</div>
+	</div>
+
+<% end %>

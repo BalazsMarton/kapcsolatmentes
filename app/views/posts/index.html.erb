@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Posts</h1>
-
+<%= link_to 'New Post', new_post_path %>
 <table>
   <thead>
     <tr>
@@ -17,10 +17,10 @@
       <tr>
         <td><%= post.title %></td>
         <td data-toggle="tooltip" data-placement="right" title="<%= post.image %>">
-        <%= image_tag post.image.url %>
+        <%= image_tag post.image.thumb.url %>
         </td>
 
-        <td><div><%= post.content %></div></td>
+        <td><%= strip_tags raw post.content.truncate(200) %></td>
         <td><%= link_to 'Show', post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,6 +29,4 @@
   </tbody>
 </table>
 
-<br>
 
-<%= link_to 'New Post', new_post_path %>

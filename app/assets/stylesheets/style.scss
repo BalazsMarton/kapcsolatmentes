@@ -1,0 +1,45 @@
+/*POSTS*/
+#post-content-box{
+	padding:15px 0px 15px 0px; 
+}
+#post-content-strip{
+	font-size: 1.25em;
+	padding: 15px 0px 0px 0px;
+}
+
+#post-list-box{
+	padding: 15px 0px 15px 0px;
+}
+
+#post-header{
+	padding:0px;
+	height:300px;
+	border-width: 3px 0px 3px 0px;
+	border-style: solid;
+	border-color: black;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+	#post-header-title{
+		padding:5px;
+		margin-top: 0px;
+		text-align: center;
+		width:100%;
+		background-color: rgba(0,0,0,0.4);
+		color:rgba(255,255,255,0.8);
+		h1{
+			font-size: 2em;
+			margin:0px 0px 0px 0px;
+			a{
+				color:rgba(255,255,255,0.8);
+				text-decoration: none;
+			}
+		}
+		p{
+			line-height: 0.5;
+			margin:0px 0px 5px 0px;
+		}
+	}
+}

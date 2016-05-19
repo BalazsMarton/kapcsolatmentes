@@ -1,0 +1,18 @@
+<%= link_to 'Back', blog_path %>
+
+<div class="row">
+		<div class="col-md-8 col-md-offset-2">
+			<div class="" id="post-header" style="background-image: url('<%= @posts.image.cover.url %>');  ">
+				<div id="post-header-title">
+					<h1 >
+						<%= @posts.title %>
+					</h1>
+					<p><%= @posts.created_at.to_date %></p>
+				</div>
+			</div>
+
+			<div id="post-content-box">
+			<%= raw @posts.content.html_safe %>
+			</div>
+		</div>
+	</div>
