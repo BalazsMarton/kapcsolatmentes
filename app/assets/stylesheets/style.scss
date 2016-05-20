@@ -1,4 +1,30 @@
 /*POSTS*/
+body{
+
+}
+#content-wrap{
+	padding-top:100px;
+	padding-bottom:50px;
+}
+#content{
+
+}
+
+hr{
+	border-top:2px solid rgba(0,39,59,.08);
+}
+
+#disqus_thread {
+  overflow: hidden;
+
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+
+#show-post-wrap{
+	
+}
 #post-content-box{
 	padding:15px 0px 15px 0px; 
 }
