@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   root 'pages#index'
   get '/index' => 'pages#index'
+  get '/coaching' => 'pages#coaching'
   get '/blog' => 'pages#blog'
   get '/show/:id' => 'pages#show', as: 'show_post'
   get '/about' => 'pages#about'

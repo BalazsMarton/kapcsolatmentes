@@ -1,5 +1,6 @@
 /*POSTS*/
 body{
+	background-image: url("/img/paternpurple.jpg");
 
 }
 #content-wrap{
@@ -7,7 +8,9 @@ body{
 	padding-bottom:50px;
 }
 #content{
-
+	background-color:rgba(255,255,255,0.8);
+	padding:25px;
+	border-radius: 5px;
 }
 
 hr{
@@ -26,6 +29,7 @@ hr{
 	
 }
 #post-content-box{
+	overflow-x: hidden;
 	padding:15px 0px 15px 0px; 
 }
 #post-content-strip{
@@ -68,4 +72,85 @@ hr{
 			margin:0px 0px 5px 0px;
 		}
 	}
+}
+
+/*ZOOMGROUND*/
+@-webkit-keyframes cssAnimation {
+from { -webkit-transform: scale(1); }
+10%	{ -webkit-transform: scale(1);}
+to { -webkit-transform: scale(1.2);}
+}
+@-moz-keyframes cssAnimation {
+from { -moz-transform:scale(1); }
+10%	{ -moz-transform: scale(1);}
+to { -moz-transform: scale(1.2); }
+}
+@-o-keyframes cssAnimation {
+from { -o-transform:scale(1); }
+10%	{ -o-transform: scale(1);}
+to { -o-transform: scale(1.2); }
+}
+
+.zoomground-wrap {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+
+	.zoomground {
+	    position: absolute;
+	    height: 100%;
+	    width: 100%;
+	    -webkit-animation: cssAnimation 20s ease;
+		-moz-animation: cssAnimation 20s ease;
+		-o-animation: cssAnimation 20s ease;
+		-webkit-animation-fill-mode: forwards;
+	    background-image: url("/img/Z8A6709.jpg");
+	    -moz-background-size: cover;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    background-position: center center;
+	    z-index: -1;
+	}
+
+	.zoomground-logo-wrap{
+	/*background-image: url("/img/");*/
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100vw;
+    height: 100vh;
+	}
+
+	#jump-down-button{
+		position: absolute;
+		width:100%;
+		bottom:3%;
+		text-align: center;
+		.page-scroll{
+			text-decoration: none;
+			color:white;
+			transition-duration:0.5s;
+			&:hover{
+			color: white;
+			}
+			&:focus{
+			color: white;
+			}
+			&:visited{
+			}
+		}
+	}
+
+}
+/*ZOOMGROUND END*/
+
+/*FOOTER*/
+footer{
+	text-align:center;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* Standard syntax (must be last) */
 }
