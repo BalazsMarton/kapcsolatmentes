@@ -1,0 +1,20 @@
+<div id="admin-widget">
+<% if current_admin %> 
+<div class="row">
+<div class="col-sm-12">
+<p class="pull-left a-info">
+Bejelentkezve mint:<br>
+<strong><%= current_admin.email %></strong>
+</p>
+<p class="pull-right ">
+<%= link_to "", logout_path, method: "delete", class: 'fa fa-sign-out fa-2x a-logout-big' %>
+</p>
+<% else %> 
+  <ul> 
+    <li><%= link_to "Login", 'login' %></li> 
+  </ul> 
+<% end %>
+</div>
+</div>
+</div>
+<hr>

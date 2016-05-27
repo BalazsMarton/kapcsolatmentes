@@ -1,14 +1,110 @@
+/*PRE*/
+$km-default: rgba(99, 104, 130,1);
+
+//
+// mixin for bullet proof font declaration syntax
+//
+@mixin declare-font-face($font-family, $font-filename, $font-weight : normal, $font-style :normal, $font-stretch : normal) {
+@font-face {
+font-family: '#{$font-family}';
+src: url(font-path('#{$font-filename}.eot'));
+src: url(font-path('#{$font-filename}.eot?#iefix')) format('embedded-opentype'),
+url(font-path('#{$font-filename}.woff')) format('woff'),
+url(font-path('#{$font-filename}.ttf')) format('truetype'),
+url(font-path('#{$font-filename}.svg##{$font-family}')) format('svg');
+font-weight: $font-weight;
+font-style: $font-style;
+font-stretch: $font-stretch;
+}
+}
+
+@include declare-font-face('OpenSans-CondLight', 'OpenSans-CondLight-webfont', 200);
+@include declare-font-face('OpenSans-CondBold', 'OpenSans-CondBold-webfont', 200);
+@include declare-font-face('OpenSans-CondLightItalic', 'OpenSans-CondLightItalic-webfont', 200);
+
+html.turbolinks-progress-bar::before {
+	background-color: $km-default !important;
+	height: 5px !important;
+}
+
+
+
+@font-face {
+font-family: 'OleoScript-Bold';
+src: url(font-path('OleoScript-Bold.ttf')) format('truetype');
+}
+@font-face {
+font-family: 'OleoScript-Regular';
+src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
+}
+
+#full-navbar{
+	text-shadow:3px 3px 0px #fff;
+	font-family:"OpenSans-CondBold";
+	border-bottom:2px solid $km-default;
+	background-color: rgba(255,255,255,0.8);
+	
+
+
+	#custom-navbar{	
+		padding-top:5px;
+		padding-bottom:5px;
+	
+		.navbar-brand{
+			color:$km-default;;
+			font-size: 1.4em;
+			font-family: 'OleoScript-Bold';
+		}
+
+		.navbar-toggle{
+			border-radius: 0px;
+			border:2px solid $km-default;
+			.icon-bar{
+				background-color:$km-default;
+			}
+			&:hover{
+				background-color: white;	
+			}
+			&:focus{
+				background-color: white;
+			}
+		}
+
+		#myNavbar{
+			ul #navbar-box{
+				margin-top: 10px;
+				padding-left: 15px;
+				a{
+				transition:0.3s;
+				font-size: 1em;
+				padding:5px;
+				color:$km-default;
+					&:hover{
+						color: rgba(99, 104, 130,0.8);
+					}
+					&:active{
+						color: rgba(99, 104, 130,0.8);
+					}
+				}
+
+			}
+		}
+	}
+}
+/*NAVBAR END*/
+
 /*POSTS*/
 body{
 	background-image: url("/img/paternpurple.jpg");
-
 }
 #content-wrap{
 	padding-top:100px;
 	padding-bottom:50px;
 }
 #content{
-	background-color:rgba(255,255,255,0.8);
+	min-height:500px;
+	box-shadow: 5px 5px 0px rgba(99, 104, 130,1);
+	background-color:rgba(255,255,255,0.7);
 	padding:25px;
 	border-radius: 5px;
 }
@@ -74,6 +170,12 @@ hr{
 	}
 }
 
+#arrow-back{
+	text-decoration:none;
+	color:rgba(99, 104, 130,0.9);
+	margin-bottom: 5px;
+}
+
 /*ZOOMGROUND*/
 @-webkit-keyframes cssAnimation {
 from { -webkit-transform: scale(1); }
@@ -106,11 +208,11 @@ to { -o-transform: scale(1.2); }
 		-moz-animation: cssAnimation 20s ease;
 		-o-animation: cssAnimation 20s ease;
 		-webkit-animation-fill-mode: forwards;
-	    background-image: url("/img/Z8A6709.jpg");
+	    background-image: url("/img/bg.jpg");
 	    -moz-background-size: cover;
 	    -webkit-background-size: cover;
 	    background-size: cover;
-	    background-position: center center;
+	    background-position: right center;
 	    z-index: -1;
 	}
 
@@ -148,9 +250,15 @@ to { -o-transform: scale(1.2); }
 
 /*FOOTER*/
 footer{
-	text-align:center;
-	background: -webkit-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to top, rgba(255,255,255,0.9), rgba(255,255,255,0.2)); /* Standard syntax (must be last) */
-}
+	padding: 25px;
+	box-shadow: 0px -3px 1px ;
+	background-image: url('/img/footer_lodyas.png');
+	color: rgba(99, 104, 130,0.9);
+	font-family: "OpenSans-CondBold";
+	h3{
+		text-shadow: 3px 3px 0px rgba(81,85,107,0.5);
+	}
+	p{
+		font-size: 1.2em
+	}
+	}
