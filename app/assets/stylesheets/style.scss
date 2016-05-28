@@ -39,7 +39,6 @@ src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
 }
 
 #full-navbar{
-	text-shadow:3px 3px 0px #fff;
 	font-family:"OpenSans-CondBold";
 	border-bottom:2px solid $km-default;
 	background-color: rgba(255,255,255,0.8);
@@ -51,6 +50,7 @@ src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
 		padding-bottom:5px;
 	
 		.navbar-brand{
+			text-shadow:3px 3px 0px #fff;
 			color:$km-default;;
 			font-size: 1.4em;
 			font-family: 'OleoScript-Bold';
@@ -250,11 +250,13 @@ to { -o-transform: scale(1.2); }
 
 /*FOOTER*/
 footer{
-	padding: 25px;
 	box-shadow: 0px -3px 1px ;
-	background-image: url('/img/footer_lodyas.png');
-	color: rgba(99, 104, 130,0.9);
+	background-color: #606479;
+	color: rgba(255, 255, 255,0.9);
 	font-family: "OpenSans-CondBold";
+	#footer-content{
+		padding:25px;
+	}
 	h3{
 		text-shadow: 3px 3px 0px rgba(81,85,107,0.5);
 	}
