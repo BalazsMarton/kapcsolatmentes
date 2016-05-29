@@ -26,17 +26,8 @@ html.turbolinks-progress-bar::before {
 	background-color: $km-default !important;
 	height: 5px !important;
 }
-
-
-
-@font-face {
-font-family: 'OleoScript-Bold';
-src: url(font-path('OleoScript-Bold.ttf')) format('truetype');
-}
-@font-face {
-font-family: 'OleoScript-Regular';
-src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
-}
+@font-face{font-family:'OleoScript-Bold';src:font-url("OleoScript-Bold.ttf") format("truetype")}
+@font-face{font-family:'OleoScript-Regular';src:font-url("OleoScript-Regular.ttf") format("truetype")}
 
 #full-navbar{
 	font-family:"OpenSans-CondBold";
@@ -53,7 +44,6 @@ src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
 			text-shadow:3px 3px 0px #fff;
 			color:$km-default;;
 			font-size: 1.4em;
-			font-family: 'OleoScript-Bold';
 		}
 
 		.navbar-toggle{
@@ -76,7 +66,7 @@ src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
 				padding-left: 15px;
 				a{
 				transition:0.3s;
-				font-size: 1em;
+				font-size: 1.2em;
 				padding:5px;
 				color:$km-default;
 					&:hover{
@@ -92,6 +82,16 @@ src: url(font-path('OleoScript-Regular.ttf')) format('truetype');
 	}
 }
 /*NAVBAR END*/
+
+#df-text-format{
+	text-align:justify;
+}
+
+#sign{
+	font-family:OleoScript-Regular;
+	color: rgba(0,0,0,0.7);
+	font-size: 1.2em;
+}
 
 /*POSTS*/
 body{
