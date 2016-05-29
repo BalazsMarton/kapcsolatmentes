@@ -106,9 +106,16 @@ html.turbolinks-progress-bar::before {
 #user-card{
 	background-color: rgba(0,0,0,0.1);
 	padding:1.25em;
+	#avatar img{
+		margin-left:auto;
+		margin-right:auto;
+	}
 	#user-card-name {
+		background-color: rgba(255,255,255,0.5);
+		text-align:	center;
 		font-family:"OpenSans-CondLight";
 		font-size: 1.5em;
+		margin:0px;
 	}
 	
 }
