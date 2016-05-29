@@ -31,12 +31,13 @@ html.turbolinks-progress-bar::before {
 }
 
 #df-text-format{
-	text-align:justify;
+	
 	h3{
 		font-family:"OpenSans-CondBold";
 		color: #656568;
 	}
 	p{
+		text-align:justify;
 		font-family:"OpenSans-CondLight";
 		font-size: 1.25em;
 	}
@@ -64,6 +65,7 @@ html.turbolinks-progress-bar::before {
 			text-shadow:3px 3px 0px #fff;
 			color:$km-default;;
 			font-size: 1.4em;
+			padding:5px 0px 5px 15px;
 		}
 
 		.navbar-toggle{
@@ -90,10 +92,10 @@ html.turbolinks-progress-bar::before {
 				padding:5px;
 				color:$km-default;
 					&:hover{
-						color: rgba(99, 104, 130,0.8);
+						color: rgba(99, 104, 130,0.9);
 					}
 					&:active{
-						color: rgba(99, 104, 130,0.8);
+						color: rgba(99, 104, 130,0.9);
 					}
 				}
 
@@ -114,6 +116,13 @@ html.turbolinks-progress-bar::before {
 		text-align:	center;
 		font-family:"OpenSans-CondLight";
 		font-size: 1.75em;
+		margin-bottom: 0px;
+	}
+	#user-card-rank{
+		text-align:	center;
+		font-family:"OpenSans-CondLight";
+		font-size: 1.25em;
+		margin-top:-5px;
 	}
 	
 }
@@ -261,10 +270,10 @@ to { -o-transform: scale(1.2); }
 			color:white;
 			transition-duration:0.5s;
 			&:hover{
-			color: white;
+			color: $km-default;
 			}
 			&:focus{
-			color: white;
+			color: $km-default;
 			}
 			&:visited{
 			}
@@ -290,3 +299,52 @@ footer{
 		font-size: 1.2em
 	}
 	}
+
+#footer-contacts tbody tr{ 
+	td{
+		padding:5px 0px 5px 0px;
+	}
+	td:nth-child(2){
+		padding-left:1em;
+		a{
+			color: rgba(255, 255, 255,0.9);
+			text-decoration: none;
+			transition-duration:0.5s;
+			&:hover{
+			background-color: white;
+			color:$km-default;
+			}
+			&:focus{
+			color:$km-default;
+			}
+		}
+	}
+}
+
+/*CHEVRON-UP*/
+.cd-top{
+	opacity: 0;
+	color: rgba(255,255,255,0.9);
+	position: fixed;
+  	bottom: 10px;
+  	right: 6px;
+	&:hover{
+		color: rgba(255,255,255,0.9);
+	}
+	&:focus{
+		color: rgba(255,255,255,0.9);
+	}
+	&:visited{
+		color: rgba(255,255,255,0.9);
+	}
+}
+
+.cd-is-visible {
+	/* the button becomes visible */
+	visibility: visible;
+	opacity: 1;
+}
+.cd-fade-out {
+	 /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	opacity: .5;
+}

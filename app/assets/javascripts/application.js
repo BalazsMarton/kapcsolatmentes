@@ -17,12 +17,3 @@
 //= require turbolinks
 //= require ckeditor/init
 //= require_tree .
-
-Turbolinks.enableProgressBar();
-
- $(document).on('page:update', function(){
-      console.log('page updated');
-      if ($('.ckeditor')[0]) {
-          CKEDITOR.replace($('.ckeditor').attr('id'));
-      }
-  });
