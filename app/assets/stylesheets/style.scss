@@ -22,13 +22,33 @@ font-stretch: $font-stretch;
 @include declare-font-face('OpenSans-CondBold', 'OpenSans-CondBold-webfont', 200);
 @include declare-font-face('OpenSans-CondLightItalic', 'OpenSans-CondLightItalic-webfont', 200);
 
+@font-face{font-family:'OleoScript-Bold';src:font-url("OleoScript-Bold.ttf") format("truetype")}
+@font-face{font-family:'OleoScript-Regular';src:font-url("OleoScript-Regular.ttf") format("truetype")}
+
 html.turbolinks-progress-bar::before {
 	background-color: $km-default !important;
 	height: 5px !important;
 }
-@font-face{font-family:'OleoScript-Bold';src:font-url("OleoScript-Bold.ttf") format("truetype")}
-@font-face{font-family:'OleoScript-Regular';src:font-url("OleoScript-Regular.ttf") format("truetype")}
 
+#df-text-format{
+	text-align:justify;
+	h3{
+		font-family:"OpenSans-CondBold";
+		color: #656568;
+	}
+	p{
+		font-family:"OpenSans-CondLight";
+		font-size: 1.25em;
+	}
+}
+
+#sign{
+	font-family:OleoScript-Regular;
+	color: #656568;
+	font-size: 1.25em;
+}
+
+/*NAVBAR*/
 #full-navbar{
 	font-family:"OpenSans-CondBold";
 	border-bottom:2px solid $km-default;
@@ -81,17 +101,18 @@ html.turbolinks-progress-bar::before {
 		}
 	}
 }
-/*NAVBAR END*/
 
-#df-text-format{
-	text-align:justify;
+/*ABOUT*/
+#user-card{
+	background-color: rgba(0,0,0,0.1);
+	padding:1.25em;
+	#user-card-name {
+		font-family:"OpenSans-CondLight";
+		font-size: 1.5em;
+	}
+	
 }
 
-#sign{
-	font-family:OleoScript-Regular;
-	color: rgba(0,0,0,0.7);
-	font-size: 1.2em;
-}
 
 /*POSTS*/
 body{
