@@ -35,3 +35,13 @@ Turbolinks.enableProgressBar();
 	});
 
 });
+
+jQuery(document).ready( function() {
+
+    $('.newest-cover').hover( function() {
+        $(this).find('.newest-info').fadeIn(800);
+    }, function() {
+        $(this).find('.newest-info').fadeOut(300);
+    });
+	
+});

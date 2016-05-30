@@ -30,6 +30,11 @@ html.turbolinks-progress-bar::before {
 	height: 5px !important;
 }
 
+.df-text-style{
+	font-family:"OpenSans-CondBold";
+	color: #656568;
+}
+
 #df-text-format{
 	
 	h3{
@@ -103,7 +108,37 @@ html.turbolinks-progress-bar::before {
 		}
 	}
 }
-
+/*INDEX*/
+.newest{
+	padding:15px;
+}
+.newest-cover{
+	border-radius: 3px;
+	padding:0px;
+	height:300px;
+	background-size: cover;
+	background-position: center center;
+}
+.newest-info{
+	border: 5px solid white;
+	overflow:hidden;
+	padding:30px;
+	text-align: center;
+	display:none;
+	margin:0px;
+	width:100%;
+	height: 300px;
+	background-color: rgba(96,100,121,0.9);
+	color: rgba(255,255,255,0.9);
+	h3{	
+		font-family:"OpenSans-CondBold";
+		margin:0px;
+	}
+	p{
+		font-family:"OpenSans-CondBold";
+		font-size: 1.2em;
+	}
+}
 /*ABOUT*/
 #user-card{
 	background-color: rgba(0,0,0,0.1);
