@@ -5,32 +5,40 @@
 
 <h1>Listing Posts</h1>
 <%= link_to 'New Post', new_post_path %>
-<table>
+<div class="table-responsive">
+<table class="table table-hover">
   <thead>
     <tr>
+      <th colspan="1"></th>
+      <th>Cover</th>
       <th>Title</th>
-      <th>Image</th>
       <th>Content</th>
-      <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.title %></td>
-        <td data-toggle="tooltip" data-placement="right" title="<%= post.image %>">
-        <%= image_tag post.image.thumb.url %>
+      <td>
+      <ul class="list-unstyled">
+      <li><%= link_to '', post, class: 'fa fa-eye fa-lg a-show-small' %></li>
+      <li><%= link_to '', edit_post_path(post), class: 'fa fa-pencil-square-o fa-lg a-edit-small' %></li>
+      <li><%= link_to '', post, method: :delete, data: { confirm: 'Are you sure?' }, class: 'fa fa-trash fa-lg a-del-small' %></li>
+      </ul>
+  
         </td>
-
+        <td  data-toggle="tooltip" data-placement="right" title="<%= post.image %>"><%= image_tag post.image.thumb.url %></td>
+        <td><%= post.title %></td>
+        
         <td><%= strip_tags raw post.content.truncate(200) %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        
+       
       </tr>
     <% end %>
   </tbody>
 </table>
+</div>
 </div>
 </div>
 

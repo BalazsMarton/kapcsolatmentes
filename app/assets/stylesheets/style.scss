@@ -141,7 +141,7 @@ body{
 	box-shadow: 5px 5px 0px rgba(99, 104, 130,1);
 	background-color:rgba(255,255,255,0.7);
 	padding:25px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 hr{
@@ -348,3 +348,47 @@ footer{
 	 /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
 	opacity: .5;
 }
+
+/*ADMIN*/
+
+@mixin admin-icon($hover-color, $color : #B4B4B4, $transition : 0.5s, $text-decoration : none) {
+	color:$color;
+	transition:$transition;
+	&:hover{
+		text-decoration:$text-decoration;
+		color: $hover-color;
+	}
+}
+.a-show-small{
+@include admin-icon(#337AB7);
+}
+.a-edit-small{
+@include admin-icon(#1FA67A);
+}
+.a-del-small{
+@include admin-icon(#A61F1F);
+}
+.a-show-big{
+@include admin-icon(#337AB7);
+}
+.a-edit-big{
+@include admin-icon(#1FA67A);
+}
+.a-back-big{
+@include admin-icon($km-default);
+}
+.a-logout-big{
+@include admin-icon(#A61F1F);
+}
+
+.a-info{
+	border:1px solid $km-default;
+	padding: 10px;
+	background-color: rgba(255,255,255,0.5);
+}
+
+.a-show-thumb{
+	padding-top: 10px;
+}
+
+/*ADMIN END*/

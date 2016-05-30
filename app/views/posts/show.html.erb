@@ -1,8 +1,12 @@
 <div class="container" id="content-wrap">
 	<div id="content">
 	<%= render "posts/admin_widget" %>
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+	<div class="row">
+<div class="col-sm-12">
+<%= link_to '', posts_path, class: 'pull-left fa fa-arrow-circle-o-left fa-2x a-back-big'%>
+<%= link_to '', edit_post_path(@post), class: 'pull-right fa fa-pencil-square-o fa-2x a-edit-big' %>
+</div>
+</div>
 <div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="" id="post-header" style="background-image:url('<%= @post.image.cover.url %>');  ">

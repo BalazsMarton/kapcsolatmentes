@@ -1,8 +1,12 @@
 <div class="container" id="content-wrap">
 	<div id="content">
-	<%= render "posts/admin_widget" %>	
+	<%= render "posts/admin_widget" %>
+	<div class="row">
+	<div class="col-sm-12">
+		<%= link_to '', posts_path, class: 'pull-left fa fa-arrow-circle-o-left fa-2x a-back-big' %>
+	</div>
+</div>
 		<h1>New Post</h1>
-		<%= link_to 'Back', posts_path %>
 		<%= render 'form' %>
 	</div>
 </div>

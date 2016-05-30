@@ -1,9 +1,13 @@
 <div class="container" id="content-wrap">
 	<div id="content">
 	<%= render "posts/admin_widget" %>
+	<div class="row">
+	<div class="col-sm-12">
+		<%= link_to '', posts_path, class: 'pull-left fa fa-arrow-circle-o-left fa-2x a-back-big' %>
+		<%= link_to '', @post, class: 'pull-right fa fa-eye fa-2x a-show-big' %>
+	</div>
+</div>
 		<h1>Editing Post</h1>
-		<%= link_to 'Show', @post %> |
-		<%= link_to 'Back', posts_path %>
 		<%= render 'form' %>
 	</div>
 </div>
