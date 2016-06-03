@@ -41,6 +41,6 @@ jQuery(document).ready( function() {
 
 	
 	$(".newest-cover").hover(function() {
-    $(this).find('.newest-info').toggleClass('active', 1000);
+    $(this).find('.newest-info').toggleClass('active');
 });
 });
