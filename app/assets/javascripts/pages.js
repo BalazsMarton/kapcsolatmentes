@@ -43,28 +43,3 @@ jQuery(document).ready( function() {
     $(this).find('.newest-info').toggleClass('active');
 	});
 });
-
-jQuery(document).ready( function() {
-	
-var customizeForDevice = function(){
-	var h = window.innerHeight;
-    var ua = navigator.userAgent;
-    var checker = {
-      iphone: ua.match(/(iPhone|iPod|iPad)/),
-      blackberry: ua.match(/BlackBerry/),
-      android: ua.match(/Android/)
-    };
-    if (checker.android){
-        $('.zoomground-wrap').css('height',h);
-    }
-    else if (checker.iphone){
-        $('.zoomground-wrap').css('height',h);
-    }
-    else if (checker.blackberry){
-        $('.zoomground-wrap').css('height',h);
-    }
-    else {
-        $('.zoomground-wrap').css('height',h);
-    }
-}
-});
