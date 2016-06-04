@@ -358,7 +358,6 @@ to { -o-transform: scale(1.2); }
 
 .zoomground-wrap {
 	@include vh-fix;
-    height: 100%;
     width: 100%;
     overflow: hidden;
     position: relative;
