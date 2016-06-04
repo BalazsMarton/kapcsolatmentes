@@ -3,13 +3,13 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-
+#
 gem 'ckeditor'
 gem 'font-awesome-sass', '~> 4.6.2'
 gem 'jquery-turbolinks'
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass', '~> 3.3.6'
-
+#
 gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
