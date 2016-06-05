@@ -1,5 +1,5 @@
 	<div class="row">
-		<h3 class="df-text-style">Tekintse meg legújabb párkapcsolati tanácsainkat:</h3>
+		<h3 class="df-text-style">Legfrissebb blog bejegyzéseim</h3>
 		<% @posts.each do |post| %>
 		<div class="col-sm-4 newest">
 			<div class="newest-cover" style="background-image: url('<%= post.image.cover.url %>')">
@@ -8,7 +8,7 @@
 					<h3><%=link_to post.title.truncate(30), show_post_path(post) %></h3>
 					</div>
 					<div class="newest-info-description">
-					<p><%= strip_tags raw post.content.truncate(250) %></p>
+					<p><%= strip_tags truncate_html  post.content, :length => 350 %></p>
 					</div>
 					<button type="button" class="btn btn-secondary btn-sm" id="newest-info-button">
 					<%=link_to 'Bővebben', show_post_path(post) %></button>

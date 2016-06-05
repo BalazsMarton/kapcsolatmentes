@@ -4,18 +4,19 @@
 
 	<div class="row" id="post-list-box">
 		<div class="col-sm-12 col-md-8 col-md-offset-2">
+		<%= link_to show_post_path(post) do %>
 			<div class="" id="post-header" style="background-image: url('<%= post.image.cover.url %>');  ">
 				<div id="post-header-title">
 					<h1 >
-						<%= link_to post.title, show_post_path(post) %>
+						<%= post.title %>
 					</h1>
 					<p><%= post.created_at.to_date %></p>
 				</div>
 			</div>
-
+			<% end %>
 			<div id="post-content-strip">
-			<%= strip_tags post.content.html_safe.truncate(500) %>
-			<%= link_to 'Tovább...', show_post_path(post) %>
+			<%= truncate_html post.content, :length => 500 %>
+			<%= link_to 'Bővebben...', show_post_path(post) %>
 			</div>
 			<hr>
 		</div>

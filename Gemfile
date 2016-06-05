@@ -35,7 +35,14 @@ gem "fog"
 gem "figaro"
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+
+#heroku
 gem 'rails_12factor'
+
+#blog truncate fix
+gem "nokogiri"
+gem "htmlentities"
+gem "truncate_html"
 # Use Unicorn as the app server
 # gem 'unicorn'
 

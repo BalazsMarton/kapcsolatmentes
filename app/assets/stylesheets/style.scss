@@ -147,7 +147,7 @@ html.turbolinks-progress-bar::before {
 
 	h3{	
 		font-size:2em;
-		text-align:left;
+		text-align:center;
 		transition-duration: 1s;
 		font-family:"OpenSans-CondBold";
 		margin:0px;
@@ -200,7 +200,6 @@ html.turbolinks-progress-bar::before {
 	background-color: rgba(96,100,121,0.9);
 	.newest-info-title{
 	h3{	
-		text-align:center;
 		
 		a{
 			background-color:transparent;
@@ -297,6 +296,9 @@ hr{
 
 #post-list-box{
 	padding: 15px 0px 15px 0px;
+	a{
+		text-decoration: none;
+	}
 }
 
 #post-header{
@@ -321,10 +323,6 @@ hr{
 		h1{
 			font-size: 2em;
 			margin:0px 0px 0px 0px;
-			a{
-				color:rgba(255,255,255,0.8);
-				text-decoration: none;
-			}
 		}
 		p{
 			line-height: 0.5;
@@ -443,6 +441,15 @@ footer{
 			color:$km-default;
 			}
 			&:focus{
+			background-color: white;
+			color:$km-default;
+			}
+			&:active{
+			background-color: white;
+			color:$km-default;
+			}
+			&:visited{
+			background-color: white;
 			color:$km-default;
 			}
 		}
