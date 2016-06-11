@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   
   resources :posts
-  
+
+  resources :contacts, only: [:new, :create]
+
+
   mount Ckeditor::Engine => '/ckeditor'
 
   root 'pages#index'
@@ -11,7 +14,6 @@ Rails.application.routes.draw do
   get '/show/:id' => 'pages#show', as: 'show_post'
   get '/about' => 'pages#about'
   get '/why' => 'pages#why'
-  get '/contact' => 'pages#contact'
   get '/meeting' => 'pages#meeting'
   get '/partners' => 'pages#partners'
 
@@ -21,6 +23,7 @@ Rails.application.routes.draw do
   get '/login' => 'sessions#new'
   post 'login' => 'sessions#create'
   delete 'logout' => 'sessions#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
