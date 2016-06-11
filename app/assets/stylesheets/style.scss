@@ -294,18 +294,25 @@ html.turbolinks-progress-bar::before {
 }
 
 #contacts-send-button{
+	background-color: transparent;
 		font-family:"OpenSans-CondLight";
 		border:1px solid rgba(96,100,121,0.9);
 		border-radius:0;
 		transition-duration: 0.6s;
 		font-size: 1.2em;
 		text-decoration: none;
-		color:rgba(0,0,0,1);
+		color: #656568;
 		&:hover{
 			background-color: rgba(255,255,255,0.9);
 		}
 }
 
+#contacts-form{
+	.form-control{
+		border:1px solid rgba(96,100,121,0.9);
+		border-radius:0px;
+	}
+}
 /*POSTS*/
 body{
 	background-image: url("/img/paternpurple.jpg");
