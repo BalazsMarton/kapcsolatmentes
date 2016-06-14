@@ -46,11 +46,9 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'rails_12factor'
 
 #blog truncate fix
-gem "nokogiri"
-gem "htmlentities"
-gem "truncate_html"
-
-#newsletter
+gem 'nokogiri'
+gem 'htmlentities'
+gem 'truncate_html'
 
 #contact-form
 gem 'mail_form', '~> 1.5.1'

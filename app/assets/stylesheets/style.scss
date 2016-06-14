@@ -313,6 +313,52 @@ html.turbolinks-progress-bar::before {
 		border-radius:0px;
 	}
 }
+
+/*NEWSLETTER*/
+
+#mc_embed_signup{
+		color:#656568;
+		background:transparent; 
+		clear:left; font-size:1.25em;
+		font-family:"OpenSans-CondLight";
+	}
+
+#newsletter-middle-image{
+		min-height:200px;
+		/*background-image: url("/img/parents.jpg");*/
+	    -moz-background-size: cover;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	    background-position: right center;
+}
+
+#newsletter-wrap{
+	padding:15px;
+}
+
+#newsletter-inner{
+	border:4px solid white;
+	background-color:rgba(255,255,255,0.7);
+}
+
+#newsletter-coming{
+	padding:5em 0 0 5em;
+	text-align:left;
+	#newsletter-coming-text{
+		font-family:"OpenSans-CondBold";
+		transition-duration: 0.6s;
+		text-decoration: none;
+		color: rgba(255,255,255,0.8);
+		h3{
+			font-size: 2em;
+		}
+		a{
+			color:rgba(255,255,255,0.8);
+			font-size: 2em;
+			margin-top:3em;
+		}
+	}
+}
 /*POSTS*/
 body{
 	background-image: url("/img/paternpurple.jpg");
