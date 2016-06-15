@@ -315,6 +315,13 @@ html.turbolinks-progress-bar::before {
 }
 
 /*NEWSLETTER*/
+#man-newsletter{
+	height:200px;
+}
+
+#woman-newsletter{
+	height:200px;
+}
 
 #mc_embed_signup{
 		color:#656568;
@@ -324,12 +331,12 @@ html.turbolinks-progress-bar::before {
 	}
 
 #newsletter-middle-image{
-		min-height:200px;
+		height:200px;
 		/*background-image: url("/img/parents.jpg");*/
 	    -moz-background-size: cover;
 	    -webkit-background-size: cover;
 	    background-size: cover;
-	    background-position: right center;
+	    background-position: center center;
 }
 
 #newsletter-wrap{
@@ -342,7 +349,7 @@ html.turbolinks-progress-bar::before {
 }
 
 #newsletter-coming{
-	padding:5em 0 0 5em;
+	padding:5% 0 0 5%;
 	text-align:left;
 	#newsletter-coming-text{
 		font-family:"OpenSans-CondBold";
