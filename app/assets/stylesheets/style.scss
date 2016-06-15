@@ -349,20 +349,23 @@ html.turbolinks-progress-bar::before {
 }
 
 #newsletter-coming{
-	padding:5% 0 0 5%;
+	padding:6% 0 0 0;
 	text-align:left;
 	#newsletter-coming-text{
 		font-family:"OpenSans-CondBold";
 		transition-duration: 0.6s;
 		text-decoration: none;
-		color: rgba(255,255,255,0.8);
+		color: rgba(255,255,255,0.7);
 		h3{
 			font-size: 2em;
 		}
 		a{
-			color:rgba(255,255,255,0.8);
+			color:rgba(255,255,255,0.7);
 			font-size: 2em;
 			margin-top:3em;
+			&:hover{
+				color:rgba(255,255,255,1);
+			}
 		}
 	}
 }
