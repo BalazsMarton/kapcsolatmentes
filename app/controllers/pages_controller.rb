@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
 
 	def index
-		@posts = Post.order('created_at DESC').limit(5)
+		@posts = Post.order('created_at DESC').limit(6)
 	end
 
 	def blog

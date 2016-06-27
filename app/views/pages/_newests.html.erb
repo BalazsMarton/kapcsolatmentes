@@ -1,10 +1,5 @@
 	<div class="row">
-		<div class="col-sm-4" style="padding:15px;">
-		<div id="newsletter-inner" style="padding:25% 0 25% 0; width:100%; height: 300px; text-align:center; ">
-			<h1 class="df-text-style">Legfrissebb blog <br> bejegyzéseim <br></h1>
-		</div>
-		</div>
-		
+			<h1 class="df-text-style">Legfrissebb blog bejegyzéseim</h1>
 		<% @posts.each do |post| %>
 		<div class="col-sm-4 newest">
 			<div class="newest-cover" style="background-image: url('<%= post.image.cover.url %>')">
