@@ -348,7 +348,12 @@ html.turbolinks-progress-bar::before {
 
 #newsletter-wrap{
 	padding:15px;
-	margin-top: -80px;
+}
+
+@media screen and (min-width: 768px) {
+	#newsletter-wrap{
+		margin-top: -80px;
+	}
 }
 
 #newsletter-inner{
