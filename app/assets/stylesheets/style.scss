@@ -300,10 +300,10 @@ html.turbolinks-progress-bar::before {
 }
 
 #contacts-send-button{
-	background-color: transparent;
+		background-color: transparent;
 		font-family:"OpenSans-CondLight";
 		border:1px solid rgba(96,100,121,0.9);
-		border-radius:0;
+		border-radius:0px;
 		transition-duration: 0.6s;
 		font-size: 1.2em;
 		text-decoration: none;
@@ -322,11 +322,14 @@ html.turbolinks-progress-bar::before {
 
 /*NEWSLETTER*/
 #man-newsletter{
-	height:200px;
+	height:450px;
+	padding:1em 1em 1em 1em;
 }
 
 #woman-newsletter{
-	height:200px;
+	height:450px;
+	padding:1em 1em 1em 1em;
+
 }
 
 #mc_embed_signup{
@@ -334,21 +337,35 @@ html.turbolinks-progress-bar::before {
 		background:transparent; 
 		clear:left; font-size:1.25em;
 		font-family:"OpenSans-CondLight";
-		input{
-			border-radius:0px;
+		h2{
+			margin-top: 0;
+		}
+		#mc_embed_signup_scroll{
+			label{
+				margin-top: 0.2em;
+			}
+			.form-control{
+				max-width:250px;
+				border:1px solid rgba(96, 100, 121, 0.9);
+				margin-bottom: 	0.5em;
+				border-radius:0px;
+				border:1px solid ;
+			}
 		}
 	}
 
 #newsletter-middle-image{
-		height:200px;
-		/*background-image: url("/img/dc6eyXjgi.png");*/
-	    -moz-background-size: cover;
-	    -webkit-background-size: cover;
-	    background-size: cover;
+		height:450px;
+		background-image: url("/img/wm.png");
+		background-repeat: no-repeat;
+	    -moz-background-size:contain;
+	    -webkit-background-size:contain;
+	    background-size:contain;
 	    background-position: center center;
+	    margin: auto;
 	    img{
-	    	max-height:180px;
-	    	margin:5px auto 5px auto;
+	    	margin: auto;
+	    	max-height:400px;
 	    }
 }
 
@@ -356,9 +373,25 @@ html.turbolinks-progress-bar::before {
 	padding:15px;
 }
 
+@media screen and (max-width: 767px) {
+	#woman-newsletter{
+		height:380px;
+	}
+	#man-newsletter{
+		height:380px;
+	}
+	#newsletter-middle-image{
+		height:300px;
+	}
+
+}
+
 @media screen and (min-width: 768px) {
 	#newsletter-wrap{
 		margin-top: -80px;
+	}
+	#woman-newsletter{
+		height:350px;
 	}
 }
 
