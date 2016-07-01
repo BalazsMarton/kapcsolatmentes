@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get '/why' => 'pages#why'
   get '/meeting' => 'pages#meeting'
   get '/partners' => 'pages#partners'
-
+  get '/contacts' => 'contacts#new'
 
   get '/admin' => 'posts#index'
 
