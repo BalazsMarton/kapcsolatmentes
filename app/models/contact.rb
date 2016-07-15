@@ -10,7 +10,7 @@ class Contact < MailForm::Base
 	def headers
     {
       :subject => "Kapcsolatfelvétel",
-      :to => "kapcsolatmentes.comment@gmail.com",
+      :to => "info@kapcsolatmentes.hu",
       :from => %("#{name}" <#{email}>)
     }
   end
