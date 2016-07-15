@@ -158,6 +158,8 @@ html.turbolinks-progress-bar::before {
 		font-family:"OpenSans-CondBold";
 		margin:0px;
 		a{
+			line-height:1.5;
+			padding:0;
 			text-decoration:none;
 			transition-duration: 1s;
 			color:rgba(96,100,121,1);
