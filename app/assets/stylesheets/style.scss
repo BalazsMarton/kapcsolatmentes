@@ -47,6 +47,10 @@ html.turbolinks-progress-bar::before {
 	height: 5px !important;
 }
 
+strong{
+	color: #57575a;
+}
+
 .df-text-style{
 	font-family:"OpenSans-CondBold";
 	color: #656568;
@@ -73,6 +77,10 @@ html.turbolinks-progress-bar::before {
 
 #df-sign{
 	font-family:AutographLanier;
+}
+
+#text-indent{
+	text-indent: 50px;
 }
 
 /*NAVBAR*/
